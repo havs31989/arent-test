@@ -1,0 +1,53 @@
+{
+    "appName": "arent-test",
+    "label": {
+        "hi": "こんにちは",
+        "error": "エラー",
+        "warning": "警告",
+        "success": "成功",
+        "create": "新規作成",
+        "edit": "編集",
+        "delete": "削除",
+        "list": "一覧",
+        "first": "最初",
+        "last": "最後",
+        "next": "次",
+        "previous": "前",
+        "show": "表示",
+        "records": "件",
+        "pageOf": "{total}件中 {page}ページ目",
+        "status": "状態",
+        "search": "検索",
+        "save": "保存",
+        "information": "情報",
+        "active": "有効",
+        "inactive": "無効",
+        "select": "選択してください"
+    },
+    "normalMessage": {
+        "saveSuccess": "データが正常に保存されました。"
+    },
+    "errorMessage": {
+        "internalServerError": "アプリケーションエラーが発生しました。サポートにお問い合わせください。",
+        "requiredField": "{field}は必須項目です。"
+    },
+    "auth": {
+        "username": "ユーザー名",
+        "password": "パスワード",
+        "rememberMe": "ログイン状態を保持する",
+        "forgotPassword": "パスワードをお忘れですか？",
+        "confirmPassword": "パスワード（確認）",
+        "register": "登録",
+        "login": "ログイン",
+        "error001": "ユーザー名またはパスワードが正しくありません。",
+        "error002": "アカウントがロックされています。",
+        "error003": "パスワードが一致しません。",
+        "error004": "ユーザーが存在しません。"
+    },
+    "layout": {
+        "menuItem01": "自分の記録",
+        "menuItem02": "チャレンジ",
+        "menuItem03": "お知らせ"
+    },
+    "home": {}
+}

@@ -1,0 +1,47 @@
+{
+  "appName": "arent-test",
+  "label": {
+    "hi": "Hello",
+    "error": "Error",
+    "warning": "Warning",
+    "success": "Success",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "list": "List",
+    "first": "First",
+    "last": "Last",
+    "next": "Next",
+    "previous": "Previous",
+    "show": "Show",
+    "records": "records",
+    "pageOf": "Page {page} of {total}",
+    "status": "Status",
+    "search": "Search",
+    "save": "Save",
+    "information": "Information",
+    "active": "Active",
+    "inactive": "Locked",
+    "select": "Select "
+  },
+  "normalMessage": {
+    "saveSuccess": "Data saved successfully."
+  },
+  "errorMessage": {
+    "internalServerError": "Application error! Please contact support.",
+    "requiredField": "{field} cannot be empty!"
+  },
+  "auth": {
+    "username": "Username",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "confirmPassword": "Confirm password",
+    "register": "Register",
+    "login": "Login",
+    "error001": "Incorrect username or password!",
+    "error002": "Your account has been locked!",
+    "error003": "Passwords do not match!",
+    "error004": "User does not exist!"
+  }
+}
