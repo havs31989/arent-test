@@ -47,7 +47,13 @@
     "layout": {
         "menuItem01": "自分の記録",
         "menuItem02": "チャレンジ",
-        "menuItem03": "お知らせ"
+        "menuItem03": "お知らせ",
+        "footerItem01": "会員登録",
+        "footerItem02": "運営会社",
+        "footerItem03": "利用規約",
+        "footerItem04": "個人情報の取扱いについて",
+        "footerItem05": "特定商取引法に基づく表記",
+        "footerItem06": "お問い合わせ"
     },
     "home": {}
 }

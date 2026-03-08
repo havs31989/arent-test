@@ -16,6 +16,15 @@ export interface LanguageText {
     layout: Layout;
     home: Home;
 }
+export interface LanguageText {
+    appName: string;
+    label: Label;
+    normalMessage: NormalMessage;
+    errorMessage: ErrorMessage;
+    auth: Auth;
+    layout: Layout;
+    home: Home;
+}
 
 export interface Auth {
     username: string;
@@ -68,6 +77,12 @@ export interface Layout {
     menuItem01: string;
     menuItem02: string;
     menuItem03: string;
+    footerItem01: string;
+    footerItem02: string;
+    footerItem03: string;
+    footerItem04: string;
+    footerItem05: string;
+    footerItem06: string;
 }
 
 export interface NormalMessage {
