@@ -16,15 +16,6 @@ export interface LanguageText {
     layout: Layout;
     home: Home;
 }
-export interface LanguageText {
-    appName: string;
-    label: Label;
-    normalMessage: NormalMessage;
-    errorMessage: ErrorMessage;
-    auth: Auth;
-    layout: Layout;
-    home: Home;
-}
 
 export interface Auth {
     username: string;
@@ -46,6 +37,11 @@ export interface ErrorMessage {
 }
 
 export interface Home {
+    monrning: string;
+    lunch: string;
+    dinner: string;
+    snack: string;
+    loadMore: string;
 }
 
 export interface Label {
@@ -88,3 +84,4 @@ export interface Layout {
 export interface NormalMessage {
     saveSuccess: string;
 }
+

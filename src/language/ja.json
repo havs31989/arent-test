@@ -55,5 +55,11 @@
         "footerItem05": "特定商取引法に基づく表記",
         "footerItem06": "お問い合わせ"
     },
-    "home": {}
+    "home": {
+        "monrning": "Morning",
+        "lunch": "Lunch",
+        "dinner": "Dinner",
+        "snack": "Snack",
+        "loadMore": "記録をもっと見る"
+    }
 }

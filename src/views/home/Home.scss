@@ -1,3 +1,38 @@
 .home-view {
-    display: flex;
+    .home-analytics {
+        .home-analytics--progressing {
+            background-image: url("/assests/images/main_photo.jpg");
+            background-size: cover;
+            background-position: center;
+
+            .progress-ring {
+                --value: 70;
+                --size: 12rem;
+                --thickness: 2px;
+            }
+        }
+        .home-analytics--chart {
+            background-color: #2e2e2e;
+        }
+    }
+
+    .home-menu {
+        .home-menu--item {
+            background-image: url("/assests/images/home_menu_item_bg.svg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .home-menu-list {
+        .home-menu-list--item {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            .home-menu-list--item---info {
+                background-color: #ffcc21;
+            }
+        }
+    }
 }
