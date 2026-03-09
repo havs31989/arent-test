@@ -1,56 +1,57 @@
-# React + TypeScript + Vite
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvosonha89%2Fone-framework-react.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvosonha89%2Fone-framework-react?ref=badge_shield)
+# Aren't Test Project
 
+This project is a web application built using React, TypeScript, and Vite. It features a structured and scalable architecture with support for multiple environments (Production, UAT, Development).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Available Scripts
 
-Currently, two official plugins are available:
+### Running the Development Server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the application locally with hot-reloading for development.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm start
 ```
+This command loads environment variables from `configuration/environment/env.development`.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Building for Production
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To build the application for the live production environment.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run build:prod
 ```
+This command uses variables from `configuration/environment/env.production`. The output is generated in the `dist/` folder.
 
+### Building for UAT
 
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvosonha89%2Fone-framework-react.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvosonha89%2Fone-framework-react?ref=badge_large)
+To build the application for the User Acceptance Testing (UAT) environment.
+
+```bash
+npm run build:uat
+```
+This command uses variables from `configuration/environment/env.uat`.
+
+### Previewing a Build
+
+After running a build command, you can preview the result locally.
+
+```bash
+npm run preview
+```
+This serves the contents of the `dist/` folder.
+
+## Project Structure
+
+*   **`configuration/environment/`**: Contains `.env.*` files for environment-specific variables.
+*   **`public/`**: Static assets that are copied directly to the build output.
+*   **`src/`**: Application source code.
+    *   **`main.tsx`**: The main entry point of the React application.
+    *   **`AppRouter.tsx`**: Defines the application's URL-based routing.
+    *   **`common/`**: Shared code, including reusable UI components, hooks, services (API, storage), and type definitions.
+    *   **`views/`**: The main pages/features of the application. Each view is self-contained with its own logic, state, and styles.
+    *   **`language/`**: JSON files for multi-language support (internationalization).
+    *   **`services/`**: Application-specific API services.
+    *   **`types/`**: Global TypeScript type definitions.
+
+---
+*This README was updated by Gemini.*
